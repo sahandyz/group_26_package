@@ -1,0 +1,31 @@
+---
+title: "central_dogma"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{central_dogma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(AnalysisCD)
+```
+
+
+Jose
+
+
+Judith
+
+Emilie
+
+Felix
+
+
