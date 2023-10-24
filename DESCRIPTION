@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R:
   c(person(given = "Sahand",
            family = "Yazdani",
-           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           role = c("aut", "cre"),
            email = "s203538@dtu.dk"), 
     person(given = "Emilie",
            family = "lastname",
@@ -13,16 +13,8 @@ Authors@R:
            email = "your@email.com"),
     person(given = "firstname",
            family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com"), 
-    person(given = "firstname",
-           family = "lastname",
            role = "aut",
-           email = "your@email.com")
-    person(given = "firstname",
-           family = "lastname",
-           role = "aut",
-           email = "your@email.com")))
+           email = "your@email.com"))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
@@ -30,5 +22,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10),
+    ggplot2,
+    stringr
 RoxygenNote: 7.2.3
