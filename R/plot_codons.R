@@ -1,5 +1,5 @@
 
-#' Plot codon count, using
+#' Plot codon count, using a string of codons in one letter format.
 #'
 #' @importFrom ggplot2 ggplot aes geom_col theme_bw theme
 #' @importFrom stringr str_split boundary str_count
@@ -9,7 +9,7 @@
 #' @return Returns an object containing a plot
 #' @export
 #'
-#' @examples codon_string = "MRTYVCIVC"
+#' @examples codon_string = "MRTYVCIVCVIC"
 #' plot_codons(codon_string)
 plot_codons <- function(codon_string){
   # Takes a string of codons, converst it into a vector with codon names, and returns a vector with unique vector names

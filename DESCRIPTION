@@ -1,6 +1,6 @@
 Package: AnalysisCD
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Central Dogma
 Version: 0.1.0
 Authors@R:
   c(person(given = "Sahand",
@@ -8,30 +8,35 @@ Authors@R:
            role = c("aut", "cre"), # There must be a "cre", but there can only be one
            email = "s203538@dtu.dk"), 
     person(given = "Emilie",
-           family = "lastname",
+           family = "Munk",
            role = "aut",
            email = "your@email.com"),
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Judith",
+           family = "Tierno",
            role = c("aut", "cre"),
            email = "your@email.com"), 
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Josefine",
+           family = "Løken",
            role = "aut",
            email = "your@email.com")
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Felix",
+           family = "Freiesleben",
            role = "aut",
-           email = "your@email.com")))
+           email = "s203521@dtu.dk")))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+    A package that can help you generate DNA, convert it to RNA, and from RNA to codons. Can only convert in one direction.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10),
+    ggplot2,
+    stringr
 RoxygenNote: 7.2.3
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+VignetteBuilder: knitr
