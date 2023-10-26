@@ -1,6 +1,6 @@
 ---
 title: "central_dogma"
-output: rmarkdown::pdf_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{central_dogma}
   %\VignetteEngine{knitr::rmarkdown}
@@ -35,7 +35,7 @@ We generate a random DNA sequence by sampling a string of ATCGs. In the function
 
 ```{r}
 dna_string <- dna_sequence(200)
-cat(dna_string)
+dna_string
 ```
 
 #### Converting DNA to RNA
@@ -44,7 +44,7 @@ The replace_T_with_U function transforms a given DNA sequence by replacing thymi
 
 ```{r}
 rna_string <- replace_T_with_U(dna_string)
-cat(rna_string)
+rna_string
 
 ```
 
