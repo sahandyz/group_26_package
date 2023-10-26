@@ -19,6 +19,7 @@ library(AnalysisCD)
 ```
 
 We generate a random DNA sequence by sampling a string of ATCGs. In the function, a string is generated with the 'replica' parameter set to 'true.' This means the sequence may not have an equal number of bases. The function takes a numerical input, representing the desired length of the DNA sequence. This function is essential because it rapidly generates new random strings that can serve as input for other functions. Since the user can determine the length, it provides the flexibility to create short, easily readable sequences. Experimenting with short sequences as input for other functions can help in understanding the outcomes better. Conversely, creating a long string makes it more realistic and representative of real-life scenarios.
+
 ```{r}
 dna_string <- dna_sequence(200)
 dna_string
@@ -33,7 +34,6 @@ rna_string
 ```
 
 Emilie
-
 
 ```{r}
 codons <- get_codons(rna_string)
@@ -61,5 +61,3 @@ plot_codons(codons_str)
 
 Discussion:
 
-Keeping the number of dependencies low in an R package is a good idea because it makes package maintenance easier, improves package stability, speeds up installations, and gives you better control over what your package does. Having fewer dependencies makes your package more reliable and secure, reducing the chances of problems and conflicts with other packages. There are certain scenarios where you can't avoid having more dependencies. If your package is meant to work with other packages or serve specialized needs, you might need specific dependencies.
-When using the @ import package function, the order in which you list dependencies matter. When using package::function() the order does not matter and it eliminates ambiguity.
