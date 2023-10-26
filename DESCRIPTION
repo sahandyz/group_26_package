@@ -22,7 +22,7 @@ Authors@R:
     person(given = "Felix",
            family = "Freiesleben",
            role = "aut",
-           email = "s203521@dtu.dk")))
+           email = "s203521@dtu.dk"))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     A package that can help you generate DNA, convert it to RNA, and from RNA to codons. Can only convert in one direction.
