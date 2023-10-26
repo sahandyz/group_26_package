@@ -20,8 +20,7 @@ library(AnalysisCD)
 
 Jose
 
-We sample a random string of ATCGs to create DNA. For this we use the function ..., with a parameter that tells us the length of the DNA string.
-
+We sample a random string of ATCGs to create DNA. In the functoin a sting is generated where replica is set to true. This means there will not be an equal number of bases in the sequence. The function takes a number as input, a prarameter representing the length of the wanted DNA sequence. This function is important because it quickly creates new, random stings which can be used as input for other functions. Because the user may decide the lenght, it gives the opportunity to make a short sequence, which is easy to read. Playing around with this sequence as input to other functions, will give the opportunity to understand what happens. On the other hand, creating a long string will make it realsitic and representative of real life. 
 ```{r}
 dna_string <- dna_sequence(2000)
 dna_string

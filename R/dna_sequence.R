@@ -15,3 +15,4 @@ dna_sequence <- function(string_length){
   collapse_string <- paste0(dna_string, collapse = "")
   return(collapse_string)
 }
+
