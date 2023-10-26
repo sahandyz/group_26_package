@@ -20,12 +20,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Install package
+## Installation
 ```{r, eval = FALSE}
 devtools::install_github("/sahandyz/group_26_package")
 ```
 
-## Load package
+## Usage
 
 ```{r setup}
 library(AnalysisCD)
