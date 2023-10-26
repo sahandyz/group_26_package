@@ -11,7 +11,7 @@ vignette: >
 
 The AnalysisCD package can be used to analyse a DNA sequence in regards to the central dogma. The package includes a set of functions, which all are a part of translating DNA to amino acids. This includes creating DNA sequences, translating it to RNA, translate RNA to Codons, translate Codons to amino acids and plotting the results of the analysis.
 
-### Functions
+## Functions
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -19,6 +19,13 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+
+## Install package
+```{r, eval = FALSE}
+devtools::install_github("/sahandyz/group_26_package")
+```
+
+## Load package
 
 ```{r setup}
 library(AnalysisCD)
@@ -54,7 +61,7 @@ codons
 
 #### Translation of codons to peptide
 
-The function codons_to_aa_sequence can be used to translate codons to a peptide. The input is a vector with 3-letter codons as strings which are translated using the `codon_table` which is also found in the package. After translation the function returns a string of amino acids.
+The function codons_to_aa_sequence can be used to translate codons to a peptide. The input is a list with 3-letter codons as strings which are translated using the `codon_table` which is also found in the package. After translation the function returns a string of amino acids. This means that the result from the get_codons functions can be used as input and the results from codons_to_aa_sequence can be used for the plot_codons function.
 
 ```{r}
 
