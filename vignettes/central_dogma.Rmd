@@ -52,11 +52,9 @@ codons <- get_codons(rna_string)
 codons
 ```
 
-#### Title
+#### Translation of codons to peptide
 
-sahand
-
-Would look at function and consider renaming it :D
+The function codons_to_aa_sequence can be used to translate codons to a peptide. The input is a vector with 3-letter codons as strings which are translated using the `codon_table` which is also found in the package. After translation the function returns a string of amino acids.
 
 ```{r}
 
