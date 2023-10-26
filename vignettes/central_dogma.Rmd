@@ -37,7 +37,6 @@ rna_string
 
 Emilie
 
-
 ```{r}
 codons <- get_codons(rna_string)
 codons
