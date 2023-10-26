@@ -45,7 +45,7 @@ rna_string
 
 #### Transforming RNA to codons
 
-Emilie
+The function get_codons can be used to translate RNA to codons. The input is a string containing an RNA sequence and the numeric value of the first base pair in the string to be counted (the default is 1). The function count the lenght of the string and splits them by 3. It returns a list of strings which contains the codons.
 
 ```{r}
 codons <- get_codons(rna_string)
