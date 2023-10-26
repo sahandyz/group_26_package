@@ -35,7 +35,7 @@ dna_string
 
 #### Converting DNA to RNA
 
-Judith
+The replace_T_with_U function transforms a given DNA sequence by replacing thymine (T) with uracil (U). It takes a string as input and returns a new string with all 'T's replaced by 'U's. This conversion is crucial in the context of central dogma as it prepares the DNA sequence for further translation into RNA, allowing for accurate amino acid sequence determination.
 
 ```{r}
 rna_string <- replace_T_with_U(dna_string)
@@ -45,7 +45,7 @@ rna_string
 
 #### Transforming RNA to codons
 
-The function get_codons can be used to translate RNA to codons. The input is a string containing an RNA sequence and the numeric value of the first base pair in the string to be counted (the default is 1). The function count the lenght of the string and splits them by 3. It returns a list of strings which contains the codons.
+The function get_codons can be used to translate RNA to codons. The input is a string containing an RNA sequence and the numeric value of the first base pair in the string to be counted (the default is 1). The function count the length of the string and splits them by 3. It returns a list of strings which contains the codons.
 
 ```{r}
 codons <- get_codons(rna_string)
@@ -76,3 +76,6 @@ plot_codons(codons_str)
 ### Discussion
 
 Keeping the number of dependencies low in an R package is a good idea because it makes package maintenance easier, improves package stability, speeds up installations, and gives you better control over what your package does. Having fewer dependencies makes your package more reliable and secure, reducing the chances of problems and conflicts with other packages. There are certain scenarios where you can't avoid having more dependencies. If your package is meant to work with other packages or serve specialized needs, you might need specific dependencies. When using the \@ import package function, the order in which you list dependencies matter. When using package::function() the order does not matter and it eliminates ambiguity.
+
+We believe that our package, AnalysisCD, has various potential use cases. It provides a straightforward way to generate random DNA sequences and manipulate them for experimentation or testing. Additionally, it facilitates the translation of codons to amino acids, which is essential for understanding protein synthesis. Future expansions for the package could include functions for more advanced DNA sequence analysis, such as sequence alignment or motif searching. Moreover, the plotting capabilities could be enhanced to create more sophisticated visualizations of sequences and protein structures.
+
