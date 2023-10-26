@@ -63,5 +63,3 @@ Discussion:
 
 Keeping the number of dependencies low in an R package is a good idea because it makes package maintenance easier, improves package stability, speeds up installations, and gives you better control over what your package does. Having fewer dependencies makes your package more reliable and secure, reducing the chances of problems and conflicts with other packages. There are certain scenarios where you can't avoid having more dependencies. If your package is meant to work with other packages or serve specialized needs, you might need specific dependencies.
 When using the @ import package function, the order in which you list dependencies matter. When using package::function() the order does not matter and it eliminates ambiguity.
-
-test
