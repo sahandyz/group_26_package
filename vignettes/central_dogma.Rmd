@@ -9,7 +9,7 @@ vignette: >
 
 ## AnalysisCD Package
 
-The analysisCD package can be used to analyse a DNA sequence in regards to the central dogma. The package includes a set of functions, which all are a part of translating DNA to amino acids. This includes creating DNA sequences, translating it to RNA, translate RNA to Codons, translate Codons to amino acids and plotting the results of the analysis.
+The AnalysisCD package can be used to analyse a DNA sequence in regards to the central dogma. The package includes a set of functions, which all are a part of translating DNA to amino acids. This includes creating DNA sequences, translating it to RNA, translate RNA to Codons, translate Codons to amino acids and plotting the results of the analysis.
 
 ### Functions
 
