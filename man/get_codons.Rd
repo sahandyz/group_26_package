@@ -4,10 +4,10 @@
 \alias{get_codons}
 \title{Get codons}
 \usage{
-get_codons(sequence, start = 1)
+get_codons(rna_string, start = 1)
 }
 \arguments{
-\item{sequence}{Instert string of a DNA or RNA sequence}
+\item{sequence}{Insert string of an RNA sequence}
 
 \item{start}{The first base pair in the sequence to be included}
 }
