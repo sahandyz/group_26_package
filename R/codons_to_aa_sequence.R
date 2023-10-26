@@ -5,7 +5,6 @@
 #' @return A collapsed amino acid sequence as a string
 #' @export
 #'
-#' @examples
 codons_to_aa_sequence <- function(codons){
   codon_to_aa <- paste0(codon_table[codons], collapse = "")
   return(codon_to_aa)
