@@ -11,8 +11,6 @@ vignette: >
 
 The AnalysisCD package can be used to analyse a DNA sequence in regards to the central dogma. The package includes a set of functions, which all are a part of translating DNA to amino acids. This includes creating DNA sequences, translating it to RNA, translate RNA to Codons, translate Codons to amino acids and plotting the results of the analysis.
 
-## Functions
-
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -37,7 +35,7 @@ We generate a random DNA sequence by sampling a string of ATCGs. In the function
 
 ```{r}
 dna_string <- dna_sequence(200)
-dna_string
+cat(dna_string)
 ```
 
 #### Converting DNA to RNA
@@ -46,7 +44,7 @@ The replace_T_with_U function transforms a given DNA sequence by replacing thymi
 
 ```{r}
 rna_string <- replace_T_with_U(dna_string)
-rna_string
+cat(rna_string)
 
 ```
 
